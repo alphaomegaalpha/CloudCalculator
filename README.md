@@ -1,4 +1,6 @@
 CloudCalculator
 ===============
 
-get cloudiness measure of satellite images
+get cloudiness measurement for satellite images
+
+===============
