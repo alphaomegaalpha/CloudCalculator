@@ -1,6 +1,5 @@
 import java.io.Console;
 
-
 public class CloudCalculatorApp {
 
 	public CloudCalculatorApp() {
@@ -8,6 +7,7 @@ public class CloudCalculatorApp {
 
 	public static void main(String[] args) {
 		
+		/**
 		Console c = System.console();
 
 		if (c == null) {
@@ -21,8 +21,14 @@ public class CloudCalculatorApp {
 				.readLine("Please type in the export folder: ");
 		String fileName = c
 				.readLine("Please type in the file name: ");
+		**/
+		
+		String path = "/Users/jkuepper/workspace/CloudCalculator/test/testdata/";
 		
 		CloudCalculator cc = new CloudCalculator();
+		cc.scanFolder(path);
+		cc.createImages();
+		cc.calculateCloudiness();
 		
 
 	}
